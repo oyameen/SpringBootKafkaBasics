@@ -4,7 +4,7 @@ services:
     restart: always
     container_name: SpringBootKafkaBasics
     ports:
-      - ${APP_PORT}:${APP_PORT}
+      - ${APP_PORT}:9091
     env_file:
       - ./.env
     depends_on:

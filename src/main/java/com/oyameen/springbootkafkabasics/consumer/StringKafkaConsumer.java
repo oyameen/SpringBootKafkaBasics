@@ -1,4 +1,4 @@
-package com.oyameen.springbootkafkabasics.kafka.string;
+package com.oyameen.springbootkafkabasics.consumer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;

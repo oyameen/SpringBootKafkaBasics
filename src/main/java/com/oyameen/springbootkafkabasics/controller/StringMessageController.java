@@ -1,6 +1,6 @@
 package com.oyameen.springbootkafkabasics.controller;
 
-import com.oyameen.springbootkafkabasics.kafka.string.StringKafkaProducer;
+import com.oyameen.springbootkafkabasics.producer.StringKafkaProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

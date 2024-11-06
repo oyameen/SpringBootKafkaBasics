@@ -1,4 +1,4 @@
-package com.oyameen.springbootkafkabasics.kafka.string;
+package com.oyameen.springbootkafkabasics.producer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.oyameen.springbootkafkabasics.kafka.json;
+package com.oyameen.springbootkafkabasics.consumer;
 
 import com.oyameen.springbootkafkabasics.model.Student;
 import lombok.extern.slf4j.Slf4j;

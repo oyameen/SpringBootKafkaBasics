@@ -1,6 +1,6 @@
 package com.oyameen.springbootkafkabasics.controller;
 
-import com.oyameen.springbootkafkabasics.kafka.json.JsonKafkaProducer;
+import com.oyameen.springbootkafkabasics.producer.JsonKafkaProducer;
 import com.oyameen.springbootkafkabasics.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
