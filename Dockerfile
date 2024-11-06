@@ -1,10 +1,19 @@
-FROM maven:3.9.9-eclipse-temurin-21-alpine
+FROM maven:3.9.9-eclipse-temurin-21-alpine AS base
 
 WORKDIR /app
 
-COPY target/SpringBootKafkaBasics-1.0.jar output/app.jar
-ADD src/main/resources/application.properties config/
+COPY pom.xml .
+COPY src ./src
+RUN mvn install -DSkipTest
+
+
+FROM base AS build
+
+WORKDIR /application
+
+COPY --from=base /app/target/SpringBootKafkaBasics-1.0.jar output/app.jar
+COPY --from=base /app/src/main/resources/application.properties config/
 
 EXPOSE 9091
 
-ENTRYPOINT ["java", "-jar", "output/app.jar"]
+ENTRYPOINT ["java", "-jar", "/application/output/app.jar"]
